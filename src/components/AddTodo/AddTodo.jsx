@@ -10,7 +10,7 @@ export default function AddTodo({ onAddTodo }) {
 		const formData = {
 			id: uuidv4(),
 			text: text.trim(),
-			status: 'active',
+			status: 'ongoing',
 		};
 
 		onAddTodo(formData);
