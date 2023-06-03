@@ -14,7 +14,7 @@
 	outline: none;
 }
 
-.submit-btn {
+.btn-submit {
 	padding: 0 1.5rem;
 	color: var(--color-white);
 	background-color: var(--color-accent);
@@ -24,6 +24,6 @@
 	cursor: pointer;
 }
 
-.submit-btn:hover {
+.btn-submit:hover {
 	filter: brightness(105%);
 }
