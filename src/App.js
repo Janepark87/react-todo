@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import FilterTodoList from './components/FilterTodoList/FilterTodoList';
 import TodoList from './components/TodoList/TodoList';
+import { DarkModeProvider } from './context/DarkModeContext';
 
 const filters = ['all', 'ongoing', 'completed'];
 
@@ -10,8 +11,10 @@ function App() {
 
 	return (
 		<>
-			<FilterTodoList filters={filters} filter={filter} onFilterChange={setFilter} />
-			<TodoList filter={filter} />
+			<DarkModeProvider>
+				<FilterTodoList filters={filters} filter={filter} onFilterChange={setFilter} />
+				<TodoList filter={filter} />
+			</DarkModeProvider>
 		</>
 	);
 }

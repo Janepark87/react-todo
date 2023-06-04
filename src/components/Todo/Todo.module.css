@@ -41,3 +41,9 @@
 .btn-delete:hover svg {
 	color: var(--color-white);
 }
+
+.todo.completed .label {
+	color: var(--color-grey);
+	text-decoration: line-through;
+	filter: brightness(0.8);
+}

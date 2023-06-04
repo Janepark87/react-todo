@@ -9,10 +9,8 @@
 
 .filters {
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
 	gap: 0.5rem;
-	width: 100%;
 }
 
 .filter {
@@ -43,5 +41,9 @@
 	border: 1px solid var(--color-text);
 }
 
-.filter:hover:after {
+.btn-theme {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
