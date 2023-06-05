@@ -45,5 +45,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: var(--color-text);
+	background-color: transparent;
+	font-size: 1.125rem;
+	transition: color 0.3s ease-in-out;
 	cursor: pointer;
+}
+
+.btn-theme:hover {
+	color: var(--color-accent);
 }
