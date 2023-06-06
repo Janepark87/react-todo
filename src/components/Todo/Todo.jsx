@@ -16,7 +16,7 @@ export default function Todo({ todo, onUpdate, onDelete }) {
 	};
 	return (
 		<li className={`${styles.todo} ${status === 'completed' ? styles.completed : ''}`}>
-			<input type="checkbox" className={styles.checkbox} id={`todoCheckbox-${id}`} checked={status === 'completed'} onChange={handleUpdatedEvent} />
+			<input type="checkbox" id={`todoCheckbox-${id}`} className={styles.checkbox} checked={status === 'completed'} onChange={handleUpdatedEvent} />
 			<label htmlFor={`todoCheckbox-${id}`} className={styles.label}>
 				{text}
 			</label>
